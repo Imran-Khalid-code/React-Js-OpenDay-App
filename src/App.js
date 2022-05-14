@@ -16,6 +16,15 @@ const App = () => {
 
 							{open.topics &&
 								open.topics.map((data) => {
+									return (
+										<div key={open.id}>
+											<img src={data.cover_image} />
+										</div>
+									);
+								})}
+
+							{open.topics &&
+								open.topics.map((data) => {
 									return <div key={open.id}>{data.description}</div>;
 								})}
 						</div>
