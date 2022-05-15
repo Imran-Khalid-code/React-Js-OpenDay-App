@@ -1,0 +1,39 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 2.5rem;
+	white-space: pre-line;
+	margin: 7px 100px;
+	text-align: center;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	// img {
+	// 	width: 450px;
+	// }
+
+	.content {
+		line-height: 2.5rem;
+		display: inline-block;
+		margin: 10px 0px;
+		text-align: left;
+		// font-weight: bold;
+	}
+}
