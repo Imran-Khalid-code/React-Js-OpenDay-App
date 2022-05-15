@@ -1,24 +1,28 @@
 import React from "react";
 // import OpenData from "./data/OpenDay.json";
 import "./App.css";
-import SideBar from "./components/SideBar";
+import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Dentistry from "./pages/Dentistry/Dentistry.js";
-import InfoTech from "./pages/InfoTech/InfoTech.js";
+import Home from "./components/pages/Home";
+import Contents from "./components/pages/Contents";
+import InfoTech from "./components/pages/InfoTech";
 
 const App = () => {
 	return (
-		<div className="App">
-			<Router>
-				<SideBar />
-				<Switch>
-					<Route path="/" exact component={Home} />
-					<Route path="/dentistry" component={Dentistry} />
-					<Route path="/infotech" component={InfoTech} />
-				</Switch>
-			</Router>
-		</div>
+		<Router>
+			<NavBar />
+			<Switch>
+				<Route exact path="/">
+					<Home />
+				</Route>
+				<Route path="/contents">
+					<Contents />
+				</Route>
+				<Route path="/infotech">
+					<InfoTech />
+				</Route>
+			</Switch>
+		</Router>
 	);
 };
 

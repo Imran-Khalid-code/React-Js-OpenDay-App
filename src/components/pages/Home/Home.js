@@ -1,5 +1,5 @@
 import React from "react";
-import OpenData from "../../data/OpenDay.json";
+import OpenData from "../../../data/OpenDay.json";
 import styles from "./Home.module.scss";
 
 const Home = () => {
