@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Contents from "./components/pages/Contents";
+import Courses from "./components/pages/Courses";
 
 const App = () => {
 	return (
@@ -16,6 +17,9 @@ const App = () => {
 				</Route>
 				<Route path="/contents">
 					<Contents />
+				</Route>
+				<Route path="/courses">
+					<Courses />
 				</Route>
 			</Switch>
 		</Router>

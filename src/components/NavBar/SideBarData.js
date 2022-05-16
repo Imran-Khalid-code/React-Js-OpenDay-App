@@ -17,13 +17,13 @@ export const SideBarData = [
 		cName: "nav-text",
 	},
 
-	// {
-	// 	title: "courses",
-	// 	path: "/",
-	// 	icon: <IoIcons.IoMdPeople />,
-	// 	cName: "nav-text",
-	// },
-	// {
+	{
+		title: "Courses",
+		path: "/courses",
+		icon: <IoIcons.IoMdPeople />,
+		cName: "nav-text",
+	},
+	//{
 	// 	title: "Messages",
 	// 	path: "/",
 	// 	icon: <FaIcons.FaEnvelopeOpenText />,
