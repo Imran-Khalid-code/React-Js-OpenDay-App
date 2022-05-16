@@ -1,0 +1,14 @@
+//media-query
+
+@media (min-width: 600px) {
+	.schedule {
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width: 800px) {
+	.schedule {
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+}

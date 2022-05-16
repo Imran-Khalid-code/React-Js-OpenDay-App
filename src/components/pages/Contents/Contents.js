@@ -1,5 +1,6 @@
 import React from "react";
 import OpenData from "../../../data/OpenDay.json";
+import styles from "./Contents.module.scss";
 
 const contents = () => {
 	return (
@@ -12,7 +13,7 @@ const contents = () => {
 							{record.topics &&
 								record.topics.map((data) => {
 									return (
-										<div key={record.id}>
+										<div className={styles.schedule} key={record.id}>
 											{data.programs &&
 												data.programs.map((course) => {
 													return <div key={course.id}>{course.title}</div>;

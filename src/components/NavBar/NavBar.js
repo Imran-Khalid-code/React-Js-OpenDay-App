@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
+import { IoDocumentOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { SideBarData } from "./SideBarData";
 import "./NavBar.css";

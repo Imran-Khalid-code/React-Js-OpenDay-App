@@ -7,8 +7,7 @@
 	font-family: "Lato", sans-serif;
 }
 
-.contents,
-.infotech {
+.contents {
 	display: flex;
 	/* height: 90vh; */
 	align-items: center;
@@ -16,6 +15,6 @@
 	/* margin: auto; */
 	height: fit-content;
 	margin-top: 15px;
-	white-space: pre-line;
+	/* white-space: pre-line; */
 	text-align: center;
 }

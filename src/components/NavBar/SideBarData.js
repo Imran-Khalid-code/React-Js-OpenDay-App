@@ -2,7 +2,7 @@ import React from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
-
+import { IoDocumentOutline } from "react-icons/io5";
 export const SideBarData = [
 	{
 		title: "Home",
@@ -13,17 +13,12 @@ export const SideBarData = [
 	{
 		title: "Contents",
 		path: "/contents",
-		icon: <FaIcons.FaCartPlus />,
+		icon: <IoDocumentOutline />,
 		cName: "nav-text",
 	},
-	{
-		title: "InfoTech",
-		path: "/infotech",
-		icon: <FaIcons.FaCartPlus />,
-		cName: "nav-text",
-	},
+
 	// {
-	// 	title: "Team",
+	// 	title: "courses",
 	// 	path: "/",
 	// 	icon: <IoIcons.IoMdPeople />,
 	// 	cName: "nav-text",
