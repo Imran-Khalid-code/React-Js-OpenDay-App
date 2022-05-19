@@ -1,5 +1,6 @@
 import React from "react";
 import OpenData from "../../../data/OpenDay.json";
+import styles from "./Subject.module.scss";
 
 const Subject = () => {
 	return (
@@ -16,13 +17,24 @@ const Subject = () => {
 
 											.map((lesson) => (
 												<p>
-													<div>{lesson.title}</div>
-													<div> {lesson.description_short} </div>
-													<div>{lesson.start_time}</div>
-													<div>{lesson.room}</div>
-													<div>{lesson.location.address}</div>
-													<div> {lesson.location.postcode}</div>
-													<div>{lesson.location.website}</div>
+													<h1 className={styles.title}>{lesson.title}</h1>
+													<div className={styles.content}>
+														{lesson.description_short}
+													</div>
+													<div className={styles.content}>
+														{lesson.start_time}
+													</div>
+													<div className={styles.content}>{lesson.room}</div>
+													<div className={styles.content}>
+														{lesson.location.address}
+													</div>
+													<div className={styles.content}>
+														{" "}
+														{lesson.location.postcode}
+													</div>
+													<div className={styles.content}>
+														{lesson.location.website}
+													</div>
 													<div>
 														<img src={lesson.location.cover_image} />
 													</div>

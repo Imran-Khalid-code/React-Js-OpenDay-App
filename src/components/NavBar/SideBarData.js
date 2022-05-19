@@ -3,6 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import { IoDocumentOutline } from "react-icons/io5";
+
 export const SideBarData = [
 	{
 		title: "Home",

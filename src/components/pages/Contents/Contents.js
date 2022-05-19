@@ -5,7 +5,6 @@ import styles from "./Contents.module.scss";
 const contents = () => {
 	return (
 		<div className="contents">
-			{/* <h1>Schedule</h1> */}
 			{OpenData &&
 				OpenData.map((record) => {
 					return (

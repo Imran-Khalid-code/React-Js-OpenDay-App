@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 import { SideBarData } from "./SideBarData";
 import "./NavBar.css";
 import { IconContext } from "react-icons";
+// import Searchbox from "../pages/Searchbox/Searchbox";
 
-const SideBar = () => {
+const SideBar = (props) => {
 	const [sidebar, setSideBar] = useState(false);
+	// const { handleSearchInput } = props;
 
 	const showSideBar = () => {
 		setSideBar(!sidebar);
