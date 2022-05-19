@@ -8,7 +8,7 @@
 }
 
 .contents,
-.courses {
+.courses.subjects {
 	display: flex;
 	/* height: 90vh; */
 	align-items: center;

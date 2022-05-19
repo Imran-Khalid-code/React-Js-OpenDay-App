@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Contents from "./components/pages/Contents";
 import Courses from "./components/pages/Courses";
+import Subject from "./components/pages/Subject";
 
 const App = () => {
 	return (
@@ -20,6 +21,9 @@ const App = () => {
 				</Route>
 				<Route path="/courses">
 					<Courses />
+				</Route>
+				<Route path="/subject">
+					<Subject />
 				</Route>
 			</Switch>
 		</Router>

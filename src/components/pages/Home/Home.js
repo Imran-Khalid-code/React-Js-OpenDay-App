@@ -11,20 +11,6 @@ const Home = () => {
 					OpenData.map((open) => {
 						return (
 							<div className={styles.content} key={open.id}>
-								{/* <strong>{open.description}</strong> */}
-								{/* <br></br>
-								{open.start_time}
-								<br></br> */}
-
-								{/* {open.topics &&
-									open.topics.map((data) => {
-										return (
-											<div key={open.id}>
-												<img src={data.cover_image} />
-											</div>
-										);
-									})} */}
-
 								{open.topics &&
 									open.topics
 										.filter((data) => data.id === 38)
